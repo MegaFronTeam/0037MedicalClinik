@@ -1,0 +1,23 @@
+mixin sAwards(data)
+	// start sAwards
+	+b.SECTION.sAwards.section#sAwards&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2 Awards
+			+e.row.row
+				mixin item(img)
+					+e.col.col-6.col-md-3.col-xl-auto
+						+e.img-wrap
+							.img-wrap-center
+								+img(`img/${img}`)
+				+item('sAwards-img-1.png')
+				+item('sAwards-img-2.png')
+				+item('sAwards-img-3.png')
+				+item('sAwards-img-4.png')
+				+item('sAwards-img-5.png')
+				+item('sAwards-img-6.png')
+				+item('sAwards-img-7.png')
+				+item('sAwards-img-8.png')
+				+item('sAwards-img-9.png')
+				+item('sAwards-img-10.png')
+	// end sAwards

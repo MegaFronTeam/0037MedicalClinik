@@ -5,16 +5,21 @@ include ../blocks/sForm/_sForm.pug
 include ../blocks/sContent/_sContent.pug
  
 include ../blocks/sContact/_sContact.pug
+include ../blocks/sWhatWeDo/_sWhatWeDo.pug
 include ../blocks/sForm/_sForm.pug
-include ../blocks/sForm/_sForm.pug
-include ../blocks/sCatalog/_sCatalog.pug
+include ../blocks/sDepartments/_sDepartments.pug
+include ../blocks/sWelcome/_sWelcome.pug
+include ../blocks/sMedicalSpecialists/_sMedicalSpecialists.pug
+include ../blocks/sLatestNews/_sLatestNews.pug
+include ../blocks/sWhatPatientsSay/_sWhatPatientsSay.pug
+include ../blocks/sAwards/_sAwards.pug
 
 block variables
 	- let  mainPage= 'main-page' 
-	- let  bg= null
+	- let  bg= 'main.jpg'
 
 block title
-	- let  title= index.head.title
+	- let  title= 'Main'
 	title= title
 block pagecontent
 	//- +mob-mnu()
@@ -22,12 +27,15 @@ block pagecontent
 	
 	+parts('header')
 	main
-		.ratiod
 		+headerBlock 
-		+sCatalog
-		+sForm()
-		+sContact()
-		
+		+sWhatWeDo
+		+sForm
+		+sDepartments
+		+sWelcome
+		+sMedicalSpecialists
+		+sLatestNews
+		+sWhatPatientsSay
+		+sAwards
 	+parts('footer')
       
 

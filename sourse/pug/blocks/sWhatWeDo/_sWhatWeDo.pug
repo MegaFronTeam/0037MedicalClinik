@@ -1,0 +1,22 @@
+mixin sWhatWeDo(data)
+	// start sWhatWeDo
+	+b.SECTION.sWhatWeDo.section#sWhatWeDo&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2 What We Do
+				p We&nbsp;offer a&nbsp;wide selection of&nbsp;medical services and the best specialists in&nbsp;medicine to&nbsp;help our patients and their families
+			+e.row.row
+				mixin item(icon, title, text)
+					+e.item
+						+img(`img/svg/${icon}`)
+						h3!= title
+						p!= text
+				.col-sm-6.col-md-4.col-lg-3
+					+item('sWhatWeDo-icon-1.svg', 'Opening Hours', 'You are able to&nbsp;book an&nbsp;appointment with the doctor you need to&nbsp;visit and check their timetable.')
+				.col-sm-6.col-md-4.col-lg-3 
+					+item('sWhatWeDo-icon-2.svg', 'Personalized Treatment', 'Treatment choices perfectly match your goals of&nbsp;treatment complications with early intervention.')
+				.col-sm-6.col-md-4.col-lg-3 
+					+item('sWhatWeDo-icon-3.svg', 'Quality and Safety', 'All team members at&nbsp;Medical Center have been trained thoroughly to&nbsp;assist in&nbsp;any situation.')
+				.col-sm-6.col-md-4.col-lg-3 
+					+item('sWhatWeDo-icon-4.svg', 'Immediate Service', 'Your treatment plan is&nbsp;designed for steady progress, with every phase promptly implemented.')
+	// end sWhatWeDo

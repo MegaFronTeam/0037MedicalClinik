@@ -1,10 +1,39 @@
 mixin headerBlock()
 	// start headerBlock
-	+b.headerBlock.section#headerBlock&attributes(attributes)
+	+b.headerBlock.section#headerBlock.bg-wrap&attributes(attributes)
+		+e.img-wrap.picture-bg: +img('img/headerBlock-bg-1.jpg', 'bg')
 		.container
-			+b.section-title.text-center
-				h2 headerBlock ds dfsdfdsfsd
-
-			.row
-						
+			+b.section-title
+				h1 Bringing Health to<br>Life for the Whole Family
+				p We’re ready to come to your aide on a 24/7 basis.
+				+e.btn.btn.btn-primary(href='#') view departments
+			+e.row.row
+				mixin item(title)
+					+e.item
+						h3!= title
+						block
+				+e.col.col-lg-4
+					+item('Opening Hours')
+						ul
+							li 
+								+icon('time')
+								| Monday – Friday: 8.00 – 18.00
+							li 
+								+icon('time')
+								| Saturday: 9.00 – 17.00
+							li 
+								+icon('time')
+								| Sunday: 9.00 – 17.00
+				+e.col.col-lg-4
+					+item('Doctors Timetable')
+						p You are able to&nbsp;book an&nbsp;appointment with the doctor you need to&nbsp;visit and check their timetable.
+						+e.btn.btn.btn-sm.btn-primary(href='#')
+							+icon('calendar')
+							| view timetable
+				+e.col.col-lg-4
+					+item('Doctors Timetable')
+						+e.link(href='tel:+492125476913')
+							+icon('phone')
+							| Tel: + 49 212 547 69 13
+						p If&nbsp;you have an&nbsp;emergency and need the doctor to&nbsp;come to&nbsp;you shortly, please call&nbsp;us and our ambulance team will come!
 	// end headerBlock

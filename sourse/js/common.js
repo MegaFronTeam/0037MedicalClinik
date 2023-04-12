@@ -319,6 +319,7 @@ function eventHandler() {
 	// JSCCommon.sendForm();
 	JSCCommon.heightwindow();
 	JSCCommon.makeDDGroup();
+	JSCCommon.imgToSVG();
 	// JSCCommon.toggleShow(".catalog-block__toggle--desctop", '.catalog-block__dropdown');
 	// JSCCommon.animateScroll();
 	
@@ -381,16 +382,19 @@ function eventHandler() {
 		watchOverflow: true
 	});
 	
-	const swiper4 = new Swiper('.sBanners__slider--js', {
-		// slidesPerView: 5,
-		...defaultSl,
-		slidesPerView: 'auto',
-		freeMode: true,
-		loopFillGroupWithBlank: true,
-		touchRatio: 0.2,
-		slideToClickedSlide: true,
-		freeModeMomentum: true,
-
+	const sWhatPatientsSaySwiper = new Swiper('.sWhatPatientsSay__slider--js', {
+		slidesPerView: 1,
+		spaceBetween: 20,
+		navigation: {
+			nextEl: '.sWhatPatientsSay__arrow-wrap .swiper-button-next',
+			prevEl: '.sWhatPatientsSay__arrow-wrap .swiper-button-prev',
+		},
+		breakpoints: {
+			768: {
+				slidesPerView: 2,
+				spaceBetween: 30,
+			}
+		}
 	});
 
 	// modal window

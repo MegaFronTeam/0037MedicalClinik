@@ -1,0 +1,22 @@
+mixin sDepartments(data)
+	// start sDepartments
+	+b.SECTION.sDepartments.section#sDepartments&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2 Departments
+				p Every department is&nbsp;headed by&nbsp;experienced doctor. Personnel of&nbsp;each department is&nbsp;certified and highly skilled to&nbsp;provide their services.
+			+e.row.row
+				mixin item(i, text)
+					+e.col.col-sm-6.col-md-4.col-lg-3
+						+e.item
+							+img(`img/svg/sDepartments-img-${i}.svg`).img-svg-js
+							span!= text
+				+item(1, 'Neurology')
+				+item(2, 'Cardiology')
+				+item(3, 'Pulmonary')
+				+item(4, 'Gastroenterology')
+				+item(5, 'Dental')
+				+item(6, 'For Disabled')
+				+item(7, 'Laboratory')
+				+item(8, 'Traumotology')
+	// end sDepartments

@@ -1,0 +1,19 @@
+mixin sLatestNews(data)
+	// start sLatestNews
+	+b.SECTION.sLatestNews.section#sLatestNews&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2 Latest News
+			+e.row.row
+				mixin item(img, title)
+					+e.item
+						+img(`img/${img}`)
+						+e.content
+							+e.date June 10, 2018
+							h3!= title
+							+e.btn.btn.btn-primary(href='#') learn more
+				.col-lg-6
+					+item('sLatestNews-img-1.jpg', 'Integrate Online Store with JetWoo Builder and...')
+				.col-lg-6
+					+item('sLatestNews-img-2.jpg', 'More Astonishing Functionality to Your Website from...')
+	// end sLatestNews

@@ -1,0 +1,24 @@
+mixin sWhatPatientsSay(data)
+	// start sWhatPatientsSay
+	+b.SECTION.sWhatPatientsSay.section#sWhatPatientsSay.bg-wrap&attributes(attributes)
+		+e.img-wrap.picture-bg: +img('img/sWhatPatientsSay-bg-1.jpg', 'bg')
+		.container
+			+b.section-title.text-center
+				h2 What Patients Say
+				p Meet our well-qualified doctors, who work every day to&nbsp;ensure you get perfect medical services. They watch your health and are very helpful.
+			+e.arrow-wrap
+				+e.slider--js.swiper
+					.swiper-wrapper
+						mixin slide(img, text, name, status)
+							.swiper-slide
+								+e.slide
+									+img(`img/${img}`)
+									+e.text!=text
+									+e.name!= name
+									span!= status
+						+slide('patient-1.jpg', 'I&nbsp;want to&nbsp;thank Dr. Johnson for her attention to&nbsp;my&nbsp;problem and for successful prescription she pffered to&nbsp;me. Great service!', 'Aaron Neo', 'Patient') 
+						+slide('patient-2.jpg', 'I&nbsp;want to&nbsp;thank Dr. Johnson for her attention to&nbsp;my&nbsp;problem and for successful prescription she pffered to&nbsp;me. Great service!', 'Aaron Neo', 'Patient') 
+						+slide('patient-1.jpg', 'I&nbsp;want to&nbsp;thank Dr. Johnson for her attention to&nbsp;my&nbsp;problem and for successful prescription she pffered to&nbsp;me. Great service!', 'Aaron Neo', 'Patient') 
+						+slide('patient-2.jpg', 'I&nbsp;want to&nbsp;thank Dr. Johnson for her attention to&nbsp;my&nbsp;problem and for successful prescription she pffered to&nbsp;me. Great service!', 'Aaron Neo', 'Patient') 
+				+arrow
+	// end sWhatPatientsSay
