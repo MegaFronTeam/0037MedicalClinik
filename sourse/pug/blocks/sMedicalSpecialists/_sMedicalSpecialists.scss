@@ -36,35 +36,6 @@
       }
 		}
 	}
-	&__item{
-		text-align: center;
-		h3 {
-			line-height: 1.4;
-			margin-bottom: rem(3);
-		}
-		p {
-			text-transform: uppercase;
-			font-size: rem(14);
-			line-height: 1;
-			font-weight: 300;
-			margin-bottom: 0;
-			color: $gray-500;
-		}
-	}
-	&__img-wrap {
-		@include block(1,1);
-		background-color: #F1F7FC;
-		border-radius: 10px;
-		overflow: hidden;
-		margin-bottom: rem(20);
-		width: 100%;
-		max-width: rem(238);
-		margin-left: auto;
-		margin-right: auto;
-		@include media-breakpoint-up(lg) {
-			margin-bottom: rem(30);
-		}
-	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}

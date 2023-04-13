@@ -50,3 +50,19 @@ mixin parts(elem)
 	script.
 		addBlock(`#{elem}`)
 	div(id=`${elem}Wrap`)
+
+mixin sDepartmentsItem(i, text, modalImg)
+	+b.sDepartments-item
+		if modalImg
+			+img(`img/svg/sDepartments-img-${i}.svg`).modal-img
+		else
+			+img(`img/svg/sDepartments-img-${i}.svg`).img-svg-js
+		span.modal-title!= text
+
+mixin medicalSpecialistsItem(img, title, text)
+	+b.sMedicalSpecialists-item
+		+e.img-wrap
+			.img-wrap-center
+				+img(`img/${img}`).modal-img
+		h3.modal-title!=title
+		p!=text 

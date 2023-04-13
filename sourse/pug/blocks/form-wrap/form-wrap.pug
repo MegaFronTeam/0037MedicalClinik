@@ -42,7 +42,7 @@ mixin select(label,pl,...items)
 						option()= item
 
 //- wrapper for form
-mixin form-wrap(inp)
+mixin form-wrap(inp=true)
 	+b.form-wrap&attributes(attributes)
 		form
 			if inp

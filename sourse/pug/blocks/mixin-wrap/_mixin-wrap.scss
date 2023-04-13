@@ -111,3 +111,71 @@
 	width: auto;
 	margin-right: rem(32);
 }
+
+.sDepartments-item {
+	cursor: pointer;
+	@include mt;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #B9D7F8;
+	border-radius: 10px;
+	padding: rem(20);
+	height: 100%;
+	@include media-breakpoint-up(lg) {
+		min-height: rem(180);
+	}
+	svg {
+		@include mt;
+		margin-bottom: rem(8);
+		color: $primary;
+		path {
+			fill: currentColor !important;
+		}
+	}
+	span {
+		font-size: rem(14);
+		margin-bottom: 0;
+		line-height: 1;
+		text-align: center;
+	}
+	&:hover {
+		color: #fff;
+		background-color: $primary;
+		svg {
+			color: #fff;
+		}
+	}
+}
+
+.sMedicalSpecialists-item{
+	text-align: center;
+	cursor: pointer;
+	h3 {
+		line-height: 1.4;
+		margin-bottom: rem(3);
+	}
+	p {
+		text-transform: uppercase;
+		font-size: rem(14);
+		line-height: 1;
+		font-weight: 300;
+		margin-bottom: 0;
+		color: $gray-500;
+	}
+	&__img-wrap {
+		@include block(1,1);
+		background-color: #F1F7FC;
+		border-radius: 10px;
+		overflow: hidden;
+		margin-bottom: rem(20);
+		width: 100%;
+		max-width: rem(238);
+		margin-left: auto;
+		margin-right: auto;
+		@include media-breakpoint-up(lg) {
+			margin-bottom: rem(30);
+		}
+	}
+}

@@ -6,20 +6,20 @@ mixin sMedicalSpecialists(data)
 				h2 Medical Specialists
 				p Meet our well-qualified doctors, who work every day to&nbsp;ensure you get perfect medical services. They watch your health and are very helpful.
 			+e.row.row
-				mixin item(img, title, text)
-					.col-sm-6.col-md-4.col-lg-3
-						+e.item
-							+e.img-wrap
-								.img-wrap-center
-									+img(`img/${img}`)
-							h3!=title
-							p!=text 
-				+item('sMedicalSpecialists-img-1.png', 'Dr. Peter Schenker', 'CONSULTING DOCTOR')
-				+item('sMedicalSpecialists-img-2.png', 'Dr. Markus Heuser', 'CONSULTING DOCTOR')
-				+item('sMedicalSpecialists-img-3.png', 'Dr. Viola Fox', 'CONSULTING DOCTOR')
-				+item('sMedicalSpecialists-img-4.png', 'PD Dr. Buhl', 'CONSULTING DOCTOR')
-				+item('sMedicalSpecialists-img-5.png', 'Dr. Becher', 'CONSULTING DOCTOR')
-				+item('sMedicalSpecialists-img-6.png', 'Dr. Seifert', 'CONSULTING DOCTOR')
-				+item('sMedicalSpecialists-img-7.png', 'Dr. Standl anastesie', 'CONSULTING DOCTOR')
-				+item('sMedicalSpecialists-img-8.png', 'Dr. Bock Neurologie', 'CONSULTING DOCTOR')
+				.col-sm-6.col-md-4.col-lg-3(data-src='modal-call-2' data-fancybox="modal" data-order="Modal window was opened from 'Medical Specialists' block" data-title='Dr. Peter Schenker' data-img="img/sMedicalSpecialists-img-1.png")
+					+medicalSpecialistsItem('sMedicalSpecialists-img-1.png', 'Dr. Peter Schenker', 'CONSULTING DOCTOR')
+				.col-sm-6.col-md-4.col-lg-3(data-src='modal-call-2' data-fancybox="modal" data-order="Modal window was opened from 'Medical Specialists' block" data-title='Dr. Markus Heuser' data-img="img/sMedicalSpecialists-img-2.png")
+					+medicalSpecialistsItem('sMedicalSpecialists-img-2.png', 'Dr. Markus Heuser', 'CONSULTING DOCTOR')
+				.col-sm-6.col-md-4.col-lg-3(data-src='modal-call-2' data-fancybox="modal" data-order="Modal window was opened from 'Medical Specialists' block" data-title='Dr. Viola Fox' data-img="img/sMedicalSpecialists-img-3.png")
+					+medicalSpecialistsItem('sMedicalSpecialists-img-3.png', 'Dr. Viola Fox', 'CONSULTING DOCTOR')
+				.col-sm-6.col-md-4.col-lg-3(data-src='modal-call-2' data-fancybox="modal" data-order="Modal window was opened from 'Medical Specialists' block" data-title='PD Dr. Buhl' data-img="img/sMedicalSpecialists-img-4.png")
+					+medicalSpecialistsItem('sMedicalSpecialists-img-4.png', 'PD Dr. Buhl', 'CONSULTING DOCTOR')
+				.col-sm-6.col-md-4.col-lg-3(data-src='modal-call-2' data-fancybox="modal" data-order="Modal window was opened from 'Medical Specialists' block" data-title='Dr. Becher' data-img="img/sMedicalSpecialists-img-5.png")
+					+medicalSpecialistsItem('sMedicalSpecialists-img-5.png', 'Dr. Becher', 'CONSULTING DOCTOR')
+				.col-sm-6.col-md-4.col-lg-3(data-src='modal-call-2' data-fancybox="modal" data-order="Modal window was opened from 'Medical Specialists' block" data-title='Dr. Seifert' data-img="img/sMedicalSpecialists-img-6.png")
+					+medicalSpecialistsItem('sMedicalSpecialists-img-6.png', 'Dr. Seifert', 'CONSULTING DOCTOR')
+				.col-sm-6.col-md-4.col-lg-3(data-src='modal-call-2' data-fancybox="modal" data-order="Modal window was opened from 'Medical Specialists' block" data-title='Dr. Standl anastesie' data-img="img/sMedicalSpecialists-img-7.png")
+					+medicalSpecialistsItem('sMedicalSpecialists-img-7.png', 'Dr. Standl anastesie', 'CONSULTING DOCTOR')
+				.col-sm-6.col-md-4.col-lg-3(data-src='modal-call-2' data-fancybox="modal" data-order="Modal window was opened from 'Medical Specialists' block" data-title='Dr. Bock Neurologie' data-img="img/sMedicalSpecialists-img-8.png")
+					+medicalSpecialistsItem('sMedicalSpecialists-img-8.png', 'Dr. Bock Neurologie', 'CONSULTING DOCTOR')
 	// end sMedicalSpecialists

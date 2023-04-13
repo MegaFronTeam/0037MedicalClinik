@@ -11,9 +11,9 @@
 	background-color: #fff;
 	max-width: 100%;
 	position: relative;
-	width: rem(1500);
+	width: rem(727);
 	// min-height: 100%; 
-	padding: 40px;
+	padding: rem(30);
 
 	.modal-content {
 		// max-width: 485px;
@@ -24,6 +24,65 @@
 		color: $primary;
 		font-size: 40px;
 		font-weight: 100;
+	}
+	&__row {
+		--bs-gutter-y: #{rem(20)};
+
+		margin-bottom: rem(30);
+	}
+	.sDepartments-item {
+		width: 100%;
+		max-width: rem(270);
+		height: auto;
+		cursor: auto;
+		&:hover {
+			color: $body-color;
+			background-color: #fff;
+		}
+	}
+	.sMedicalSpecialists-item {
+		max-width: rem(238);
+		cursor: auto;
+	}
+	p {
+		font-size: rem(14);
+		font-weight: 300;
+		line-height: 1.6;
+		color: $gray-900;
+		max-width: rem(367);
+		margin-bottom: 0;
+	}
+	.form-wrap {
+		&__row {
+			--bs-gutter-x: #{rem(30)};
+			--bs-gutter-y: #{rem(20)};
+		}
+		&__input {
+			border-color: $gray-900;
+			color: $gray-900;
+			&::placeholder {
+				color: $gray-900;
+			}
+		}
+		&__btn {
+			width: 100%;
+			max-width: rem(170);
+		}
+	}
+	&--thanks {
+		.h2 {
+			margin-bottom: rem(9);
+		}
+		p {
+			margin-bottom: rem(18);
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.btn {
+			width: 100%;
+			max-width: rem(170);
+		}
 	}
 }
 

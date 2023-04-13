@@ -31,7 +31,7 @@ const JSCCommon = {
 				IFRAME_ERROR: "Ошибка загрузки iframe",
 			},
 		});
-		document.querySelectorAll(".modal-close-js").forEach(el=>{
+		document.querySelectorAll(".modal-close-js").forEach((el)=>{
 			el.addEventListener("click", ()=>{
 				Fancybox.close();
 			})
@@ -50,11 +50,14 @@ const JSCCommon = {
 					const el = modal.querySelector(elem)
 					el.tagName == "INPUT"
 						? el.value = val
-						: el.innerHTML = val;
-					// console.log(modal.querySelector(elem).tagName)
+						: el.tagName == "IMG"
+						? el.src = val
+						: el.innerHTML = val
+					console.log(modal.querySelector(elem).tagName)
 				}
 			}
-			setValue(data.title, '.ttu');
+			setValue(data.title, '.modal-title');
+			setValue(data.img, '.modal-img');
 			setValue(data.text, '.after-headline');
 			setValue(data.btn, '.btn');
 			setValue(data.order, '.order');
@@ -316,7 +319,7 @@ function eventHandler() {
 	// JSCCommon.tabscostume('tabs');
 	JSCCommon.mobileMenu();
 	JSCCommon.inputMask();
-	// JSCCommon.sendForm();
+	JSCCommon.sendForm();
 	JSCCommon.heightwindow();
 	JSCCommon.makeDDGroup();
 	JSCCommon.imgToSVG();

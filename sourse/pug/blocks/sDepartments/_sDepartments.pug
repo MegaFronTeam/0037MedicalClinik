@@ -6,17 +6,20 @@ mixin sDepartments(data)
 				h2 Departments
 				p Every department is&nbsp;headed by&nbsp;experienced doctor. Personnel of&nbsp;each department is&nbsp;certified and highly skilled to&nbsp;provide their services.
 			+e.row.row
-				mixin item(i, text)
-					+e.col.col-sm-6.col-md-4.col-lg-3
-						+e.item
-							+img(`img/svg/sDepartments-img-${i}.svg`).img-svg-js
-							span!= text
-				+item(1, 'Neurology')
-				+item(2, 'Cardiology')
-				+item(3, 'Pulmonary')
-				+item(4, 'Gastroenterology')
-				+item(5, 'Dental')
-				+item(6, 'For Disabled')
-				+item(7, 'Laboratory')
-				+item(8, 'Traumotology')
+				+e.col.col-sm-6.col-md-4.col-lg-3(data-src='modal-call' data-fancybox="modal" data-order="Modal window was opened from 'Departments' block" data-title="Neurology" data-img='img/svg/sDepartments-img-1.svg')
+					+sDepartmentsItem(1, 'Neurology')
+				+e.col.col-sm-6.col-md-4.col-lg-3(data-src='modal-call' data-fancybox="modal" data-order="Modal window was opened from 'Departments' block" data-title="Cardiology" data-img='img/svg/sDepartments-img-2.svg')
+					+sDepartmentsItem(2, 'Cardiology')
+				+e.col.col-sm-6.col-md-4.col-lg-3(data-src='modal-call' data-fancybox="modal" data-order="Modal window was opened from 'Departments' block" data-title="Pulmonary" data-img='img/svg/sDepartments-img-3.svg')
+					+sDepartmentsItem(3, 'Pulmonary')
+				+e.col.col-sm-6.col-md-4.col-lg-3(data-src='modal-call' data-fancybox="modal" data-order="Modal window was opened from 'Departments' block" data-title="Gastroenterology" data-img='img/svg/sDepartments-img-4.svg')
+					+sDepartmentsItem(4, 'Gastroenterology')
+				+e.col.col-sm-6.col-md-4.col-lg-3(data-src='modal-call' data-fancybox="modal" data-order="Modal window was opened from 'Departments' block" data-title="Dental" data-img='img/svg/sDepartments-img-5.svg')
+					+sDepartmentsItem(5, 'Dental')
+				+e.col.col-sm-6.col-md-4.col-lg-3(data-src='modal-call' data-fancybox="modal" data-order="Modal window was opened from 'Departments' block" data-title="For Disabled" data-img='img/svg/sDepartments-img-6.svg')
+					+sDepartmentsItem(6, 'For Disabled')
+				+e.col.col-sm-6.col-md-4.col-lg-3(data-src='modal-call' data-fancybox="modal" data-order="Modal window was opened from 'Departments' block" data-title="Laboratory" data-img='img/svg/sDepartments-img-7.svg')
+					+sDepartmentsItem(7, 'Laboratory')
+				+e.col.col-sm-6.col-md-4.col-lg-3(data-src='modal-call' data-fancybox="modal" data-order="Modal window was opened from 'Departments' block" data-title="Traumotology" data-img='img/svg/sDepartments-img-8.svg')
+					+sDepartmentsItem(8, 'Traumotology')
 	// end sDepartments
