@@ -53,7 +53,7 @@ const JSCCommon = {
 						: el.tagName == "IMG"
 						? el.src = val
 						: el.innerHTML = val
-					console.log(modal.querySelector(elem).tagName)
+					// console.log(modal.querySelector(elem).tagName)
 				}
 			}
 			setValue(data.title, '.modal-title');
@@ -184,7 +184,6 @@ const JSCCommon = {
 				type: 'POST',
 				data: data,
 			}).done(function (data) {
-
 				Fancybox.close();
 				Fancybox.show([{ src: "#modal-thanks", type: "inline" }]);
 				// window.location.replace("/thanks.html");
