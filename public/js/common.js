@@ -31,11 +31,17 @@ const JSCCommon = {
 				IFRAME_ERROR: "Ошибка загрузки iframe",
 			},
 		});
-		document.querySelectorAll(".modal-close-js").forEach((el)=>{
-			el.addEventListener("click", ()=>{
+		document.addEventListener('click', (event) => {
+			let closeModalTarget = event.target.closest('.modal-close-js')
+			if(closeModalTarget) {
 				Fancybox.close();
-			})
-		})
+			}
+		});
+		// document.querySelectorAll(".modal-close-js").forEach((el)=>{
+		// 	el.addEventListener("click", ()=>{
+		// 		Fancybox.close();
+		// 	})
+		// })
 		Fancybox.bind('[data-fancybox]', {
 			placeFocusBack: false,
 		});
