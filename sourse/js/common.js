@@ -420,6 +420,11 @@ function eventHandler() {
 
 	// modal window
 
+	$('.cookies__btn--js').on('click', function(e) {
+		e.preventDefault();
+		$('.cookies').fadeOut();
+	})
+
 };
 if (document.readyState !== 'loading') {
 	eventHandler();
