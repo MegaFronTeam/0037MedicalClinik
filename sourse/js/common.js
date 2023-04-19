@@ -63,6 +63,7 @@ const JSCCommon = {
 				}
 			}
 			setValue(data.title, '.modal-title');
+			setValue(data.pragraph, '.pragraph');
 			setValue(data.img, '.modal-img');
 			setValue(data.text, '.after-headline');
 			setValue(data.btn, '.btn');
@@ -316,6 +317,17 @@ const JSCCommon = {
 	
 		convertImages('.img-svg-js');
   },
+	disabledBtn(input = '.form-wrap__policy input', btn = ".form-wrap__btn", parent = ".form-wrap") {
+		$(document).on("change", input, function () {
+			let btnDisabled = $(this).parents(parent).find(btn)
+			if (this.checked) {
+				btnDisabled.removeAttr('disabled');
+			}
+			else {
+				btnDisabled.attr('disabled', 'disabled');
+			}
+		})
+	}
 };
 const $ = jQuery;
 
@@ -328,6 +340,7 @@ function eventHandler() {
 	JSCCommon.heightwindow();
 	JSCCommon.makeDDGroup();
 	JSCCommon.imgToSVG();
+	JSCCommon.disabledBtn();
 	// JSCCommon.toggleShow(".catalog-block__toggle--desctop", '.catalog-block__dropdown');
 	// JSCCommon.animateScroll();
 	

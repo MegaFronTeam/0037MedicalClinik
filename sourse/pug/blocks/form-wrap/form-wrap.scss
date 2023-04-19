@@ -15,6 +15,33 @@
  		width: 100%;
  		display: block;
  	}
+	&__policy {
+		font-size: rem(14);
+		color: #fff;
+		line-height: 1;
+		font-weight: 300;
+		a {
+			color: #fff;
+			border-bottom: 1px solid #fff;
+			&:hover {
+				border-color: transparent;
+			}
+		}
+		.custom-input {
+			display: flex;
+			align-items: center;
+			padding-left: rem(30);
+			&__input {
+				width: rem(20);
+				height: rem(20);
+				border: 1px solid #FFFFFF;
+				border-radius: 5px;
+				background-color: $primary;
+				margin-left: rem(-30);
+				margin-right: rem(10);
+			}
+		}
+	}
 }
 
 
