@@ -68,6 +68,21 @@
 			width: 100%;
 			max-width: rem(170);
 		}
+		&__policy {
+			color: $body-color;
+			a {
+				color: $body-color;
+				border-bottom: 1px solid $body-color;
+				&:hover {
+					border-color: transparent;
+				}
+			}
+			.custom-input {
+				&__input {
+					border-color: $primary;
+				}
+			}
+		}
 	}
 	&--thanks {
 		.h2 {

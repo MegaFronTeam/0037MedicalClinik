@@ -36,6 +36,13 @@
       }
 		}
 	}
+	.sMedicalSpecialists-item {
+		&:hover {
+			.sMedicalSpecialists-item__img-wrap {
+				transform: translateY(-6px);
+			}
+		}
+	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}
