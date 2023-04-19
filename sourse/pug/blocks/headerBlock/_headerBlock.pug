@@ -4,9 +4,9 @@ mixin headerBlock()
 		+e.img-wrap.picture-bg: +img('img/headerBlock-bg-1.jpg', 'bg')
 		.container
 			+b.section-title
-				h1 City Academic hospital Solingen, Germany
+				h1 Academic Hospital Solingen, Germany
 				p We’re ready to come to your aide on a 24/7 basis.
-				+e.btn.btn.btn-primary(href='#') view departments
+				+e.btn.btn.btn-primary(href='#sDepartments') view departments
 			+e.row.row
 				mixin item(title)
 					+e.item
@@ -14,26 +14,27 @@ mixin headerBlock()
 						block
 				+e.col.col-lg-4
 					+item('Opening Hours')
+						+e.link(href='tel:+492125476913')
+							+icon('phone')
+							| Tel: + 49 212 547 69 13
 						ul
 							li 
 								+icon('time')
-								| Monday – Friday: 8.00 – 18.00
+								| Our office hours  
 							li 
 								+icon('time')
-								| Saturday: 9.00 – 17.00
+								| Daily&nbsp;8.00&nbsp;am&nbsp;&mdash; 16.00&nbsp;pm
 							li 
 								+icon('time')
-								| Sunday: 9.00 – 17.00
+								| Emergecy cases   24/7
 				+e.col.col-lg-4
 					+item('Doctors Timetable')
 						p You are able to&nbsp;book an&nbsp;appointment with the doctor you need to&nbsp;visit and check their timetable.
-						+e.btn.btn.btn-sm.btn-primary(href='#')
+						+e.btn.btn.btn-sm.btn-primary(href='#sForm')
 							+icon('calendar')
 							| view timetable
 				+e.col.col-lg-4
 					+item('Doctors Timetable')
-						+e.link(href='tel:+492125476913')
-							+icon('phone')
-							| Tel: + 49 212 547 69 13
-						p If&nbsp;you have an&nbsp;emergency and need the doctor to&nbsp;come to&nbsp;you shortly, please call&nbsp;us and our ambulance team will come!
+						
+						p In&nbsp;one of&nbsp;the most modern hospitals in&nbsp;Europe, specialists from a&nbsp;wide range of&nbsp;disciplines work together under one roof. The latest medical technology, innovative information technology and an&nbsp;architecture oriented towards the care process support doctors, nurses and therapists.
 	// end headerBlock
