@@ -157,6 +157,13 @@
 			margin-right: auto;
 		}
 	}
+	&__email-link {
+		font-size: rem(14);
+		color: #fff;
+		&:hover {
+			color: rgba($color: #fff, $alpha: .8);
+		}
+	}
 @include media-breakpoint-up(xl) {}
 
 @include media-breakpoint-up(lg) {}

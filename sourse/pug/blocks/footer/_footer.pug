@@ -8,7 +8,7 @@ mixin footer()
 						+icon('tel-solid')
 						span Alexandra Zinnmann
 						a(href="tel:+491732034066").h3 Tel: +49 173 203 40 66 
-						a(href="mailto:zinnmann@international-office-solingen.de").h4 Zinnmann@international-office-solingen.de
+						+e.email-link(href="mailto:zinnmann@international-office-solingen.de") Zinnmann@international-office-solingen.de
 				.col-sm-6.col-md-4
 					+e.item
 						+icon('person')
@@ -19,7 +19,7 @@ mixin footer()
 						+icon('tel-solid')
 						span Maria Shafir
 						a(href="tel:+491775404270").h3 Tel: +49 177 540 42 70 
-						a(href="mailto:schafir@international-office-solingen.de").h4 Schafir@international-office-solingen.de
+						+e.email-link(href="mailto:schafir@international-office-solingen.de") Schafir@international-office-solingen.de
 			+e.inner-row.row
 				.col-sm-6.col-md-4.order-sm-1.order-md-1
 					+e.logo(href="/"): +img('img/logo-2.png')
