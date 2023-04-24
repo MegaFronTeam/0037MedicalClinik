@@ -6,12 +6,12 @@ mixin sLatestNews(data)
 				h2 Latest News
 			+e.row.row
 				mixin item(img, title, id)
-					+e.item(data-fancybox="modal" data-src=id)
+					+e.item(data-fancybox="modal" data-type="ajax"  href=`modals/${id}.html`)
 						+img(`img/${img}`)
 						+e.content
 							//- +e.date June 10, 2018
 							h3!= title
-							+e.btn.btn.btn-primary(href='#') learn more
+							+e.btn.btn.btn-primary(type="button") learn more
 				.col-lg-6
 					+item('sLatestNews-img-1.jpg', 'The Department for international patients...', 'modal-article')
 				.col-lg-6
