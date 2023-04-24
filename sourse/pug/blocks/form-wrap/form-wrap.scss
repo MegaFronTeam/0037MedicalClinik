@@ -32,6 +32,7 @@
 			align-items: center;
 			padding-left: rem(30);
 			&__input {
+				flex: 0 0 auto;
 				width: rem(20);
 				height: rem(20);
 				border: 1px solid #FFFFFF;

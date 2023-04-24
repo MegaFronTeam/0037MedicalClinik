@@ -12,7 +12,7 @@ mixin modal()
 			+form-wrap
 				+e.row.row
 					.col-sm-6
-						+input('Phone number', 'tel')
+						+input('Phone number', 'tel')(required)
 					.col-sm-6
 						+input('Email', 'email')
 					.col-md-6.order-md-last
@@ -31,7 +31,7 @@ mixin modal()
 			+form-wrap
 				+e.row.row
 					.col-sm-6
-						+input('Phone number', 'tel')
+						+input('Phone number', 'tel')(required)
 					.col-sm-6
 						+input('Email', 'email')
 					.col-md-6.order-md-last

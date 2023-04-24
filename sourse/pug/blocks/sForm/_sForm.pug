@@ -10,7 +10,7 @@ mixin sForm()
 						h2 Contact Information
 						p Complete the form and we will send you a confirmation within 24 hours.
 						+input("Name",'text')
-						+input("Phone number",'tel')
+						+input("Phone number",'tel')(required)
 						+input("Email",'email')
 						+policy
 						+e.btn.btn.btn-light(type="submit") Request call
