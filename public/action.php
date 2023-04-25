@@ -10,10 +10,10 @@ $mail->Encoding = 'base64';
 $mail->CharSet = 'utf-8';
 
 ///who send 
-$mail->setFrom('info@info.com','info info');
+$mail->setFrom('info@clinic-solingen.de', 'info clinic-solingen');
 
- $mail->addAddress('janis.paberzs18@gmail.com');
-//  $mail->addAddress('wol1414@gmail.com');
+//  $mail->addAddress('janis.paberzs18@gmail.com');
+ $mail->addAddress('wol1414@gmail.com');
  // $mail->addAddress('horenkova369@gmail.com');
 // $mail->addAddress('stab@inbox.support');
 
